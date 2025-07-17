@@ -9,3 +9,22 @@ It calculates the perfect orbit using the original physics formulas.
 It asks the AI to predict the orbit, one step at a time.
 Finally, the website draws both paths on the screen—a blue line for perfect physics and an orange line for the AI's prediction. The goal is to visually see how well the AI learned physics just by observing data.
 # 2bodysolution
+
+
+
+├── backend
+│   ├── app.py
+│   ├── data
+│   ├── generate_data.py
+│   ├── models
+│   └── train_model.py
+├── frontend
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── README.md
+└── requirements.txt
+
+5 directories, 8 files
+
+folder structure
