@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Driven Orrery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="controls">
+            <h1>Data-Driven Orrery</h1>
+            <p>Compare a physically calculated orbit with one predicted by a machine learning model.</p>
+            
+            <div class="input-group">
+                <label for="x">Initial X (1e11 m):</label>
+                <input type="number" id="x" value="1.5">
+            </div>
+            <div class="input-group">
+                <label for="y">Initial Y (1e11 m):</label>
+                <input type="number" id="y" value="0">
+            </div>
+            <div class="input-group">
+                <label for="vx">Initial Vx (km/s):</label>
+                <input type="number" id="vx" value="0">
+            </div>
+            <div class="input-group">
+                <label for="vy">Initial Vy (km/s):</label>
+                <input type="number" id="vy" value="29.8">
+            </div>
+            <div class="input-group">
+                <label for="steps">Simulation Days:</label>
+                <input type="number" id="steps" value="730">
+            </div>
+            
+            <button id="simulateBtn">Simulate</button>
+            
+            <div class="legend">
+                <div><span class="color-box physics"></span> Calculated Physics</div>
+                <div><span class="color-box ml"></span> Learned by AI</div>
+            </div>
+        </div>
+
+        <div class="simulation-container">
+            <canvas id="orbitCanvas"></canvas>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
